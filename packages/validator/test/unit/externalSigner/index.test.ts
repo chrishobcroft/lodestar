@@ -7,8 +7,8 @@ import {
   externalSignerGetKeys,
   externalSignerPostSignature,
   externalSignerUpCheck,
-} from "../../../src/util/externalSignerClient";
-import {createExternalSignerServer} from "../../utils/createExternalSignerServer";
+} from "../../../src/util/externalSignerClient.js";
+import {createExternalSignerServer} from "../../utils/createExternalSignerServer.js";
 
 chai.use(chaiAsPromised);
 

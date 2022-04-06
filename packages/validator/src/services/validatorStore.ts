@@ -30,9 +30,9 @@ import {
 } from "@chainsafe/lodestar-types";
 import {BitArray, fromHexString, toHexString} from "@chainsafe/ssz";
 import {routes} from "@chainsafe/lodestar-api";
-import {Interchange, InterchangeFormatVersion, ISlashingProtection} from "../slashingProtection";
-import {PubkeyHex} from "../types";
-import {externalSignerPostSignature} from "../util/externalSignerClient";
+import {Interchange, InterchangeFormatVersion, ISlashingProtection} from "../slashingProtection/index.js";
+import {PubkeyHex} from "../types.js";
+import {externalSignerPostSignature} from "../util/externalSignerClient.js";
 
 export enum SignerType {
   Local,

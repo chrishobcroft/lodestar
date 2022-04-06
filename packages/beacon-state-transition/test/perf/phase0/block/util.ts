@@ -3,7 +3,7 @@ import {SecretKey} from "@chainsafe/blst";
 import {toGindex, Tree} from "@chainsafe/persistent-merkle-tree";
 import {BitArray} from "@chainsafe/ssz";
 import {DOMAIN_DEPOSIT, SYNC_COMMITTEE_SIZE} from "@chainsafe/lodestar-params";
-import {config} from "@chainsafe/lodestar-config/default";
+import {config} from "@chainsafe/lodestar-config/default.js";
 import {
   computeDomain,
   computeEpochAtSlot,
@@ -11,8 +11,8 @@ import {
   ZERO_HASH,
   CachedBeaconStateAllForks,
   CachedBeaconStateAltair,
-} from "../../../../src";
-import {getBlockRoot, getBlockRootAtSlot} from "../../../../src";
+} from "../../../../src/index.js";
+import {getBlockRoot, getBlockRootAtSlot} from "../../../../src/index.js";
 
 export type BlockOpts = {
   proposerSlashingLen: number;

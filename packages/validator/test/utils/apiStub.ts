@@ -1,6 +1,6 @@
 import sinon, {SinonSandbox} from "sinon";
 import {getClient, Api} from "@chainsafe/lodestar-api";
-import {config} from "@chainsafe/lodestar-config/default";
+import {config} from "@chainsafe/lodestar-config/default.js";
 
 export function getApiClientStub(
   sandbox: SinonSandbox = sinon

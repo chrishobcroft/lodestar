@@ -1,7 +1,7 @@
 import {aggregatePublicKeys, PublicKey, SecretKey} from "@chainsafe/bls";
 import {Tree} from "@chainsafe/persistent-merkle-tree";
 import {altair, ssz} from "@chainsafe/lodestar-types";
-import {chainConfig} from "@chainsafe/lodestar-config/default";
+import {chainConfig} from "@chainsafe/lodestar-config/default.js";
 import {createIBeaconConfig} from "@chainsafe/lodestar-config";
 import {
   EPOCHS_PER_SYNC_COMMITTEE_PERIOD,
@@ -10,9 +10,9 @@ import {
   SLOTS_PER_EPOCH,
   SYNC_COMMITTEE_SIZE,
 } from "@chainsafe/lodestar-params";
-import {assertValidLightClientUpdate} from "../../src/validation";
-import {LightClientSnapshotFast, SyncCommitteeFast} from "../../src/types";
-import {defaultBeaconBlockHeader, getSyncAggregateSigningRoot, signAndAggregate} from "../utils";
+import {assertValidLightClientUpdate} from "../../src/validation.js";
+import {LightClientSnapshotFast, SyncCommitteeFast} from "../../src/types.js";
+import {defaultBeaconBlockHeader, getSyncAggregateSigningRoot, signAndAggregate} from "../utils.js";
 
 describe("validateLightClientUpdate", () => {
   const genValiRoot = Buffer.alloc(32, 9);

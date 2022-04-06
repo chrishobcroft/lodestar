@@ -1,9 +1,9 @@
 import sinon from "sinon";
 import {expect} from "chai";
 import {AbortController} from "@chainsafe/abort-controller";
-import {config} from "@chainsafe/lodestar-config/default";
-import {Clock, getCurrentSlotAround} from "../../../src/util/clock";
-import {testLogger} from "../../utils/logger";
+import {config} from "@chainsafe/lodestar-config/default.js";
+import {Clock, getCurrentSlotAround} from "../../../src/util/clock.js";
+import {testLogger} from "../../utils/logger.js";
 import {SLOTS_PER_EPOCH} from "@chainsafe/lodestar-params";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 

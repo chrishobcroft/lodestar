@@ -1,4 +1,4 @@
-import {aggregatePublicKeys} from "@chainsafe/bls";
+import bls from "@chainsafe/bls";
 import {
   BASE_REWARD_FACTOR,
   EFFECTIVE_BALANCE_INCREMENT,
@@ -9,9 +9,11 @@ import {
 } from "@chainsafe/lodestar-params";
 import {altair, ValidatorIndex} from "@chainsafe/lodestar-types";
 import {bigIntSqrt} from "@chainsafe/lodestar-utils";
-import {BeaconStateAllForks} from "../types";
-import {EffectiveBalanceIncrements} from "../cache/effectiveBalanceIncrements";
-import {getNextSyncCommitteeIndices} from "./seed";
+import {BeaconStateAllForks} from "../types.js";
+import {EffectiveBalanceIncrements} from "../cache/effectiveBalanceIncrements.js";
+import {getNextSyncCommitteeIndices} from "./seed.js";
+
+const {aggregatePublicKeys} = bls;
 
 /**
  * Return the sync committee for a given state and epoch.

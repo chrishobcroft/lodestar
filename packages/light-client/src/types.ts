@@ -1,4 +1,4 @@
-import {PublicKey} from "@chainsafe/bls";
+import type {PublicKey} from "@chainsafe/bls";
 import {altair, phase0, SyncPeriod} from "@chainsafe/lodestar-types";
 
 export type LightClientStoreFast = {

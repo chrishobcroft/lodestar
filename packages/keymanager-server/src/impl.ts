@@ -8,12 +8,12 @@ import {
   ImportStatus,
   KeystoreStr,
   SlashingProtectionData,
-} from "@chainsafe/lodestar-api/keymanager";
+} from "@chainsafe/lodestar-api/keymanager.js";
 import {fromHexString} from "@chainsafe/ssz";
 import {Interchange, SignerType, Validator} from "@chainsafe/lodestar-validator";
 import {PubkeyHex} from "@chainsafe/lodestar-validator/src/types";
 import {ILogger} from "@chainsafe/lodestar-utils";
-import {LOCK_FILE_EXT, getLockFile} from "./util/lockfile";
+import {LOCK_FILE_EXT, getLockFile} from "./util/lockfile.js";
 
 export const KEY_IMPORTED_PREFIX = "key_imported";
 

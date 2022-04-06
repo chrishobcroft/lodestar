@@ -4,16 +4,16 @@ import sinon from "sinon";
 import bls from "@chainsafe/bls";
 import {toHexString} from "@chainsafe/ssz";
 import {createIChainForkConfig} from "@chainsafe/lodestar-config";
-import {config as mainnetConfig} from "@chainsafe/lodestar-config/default";
+import {config as mainnetConfig} from "@chainsafe/lodestar-config/default.js";
 import {Root} from "@chainsafe/lodestar-types";
 import {sleep} from "@chainsafe/lodestar-utils";
 import {routes} from "@chainsafe/lodestar-api";
 import {generateEmptySignedBlock} from "@chainsafe/lodestar/test/utils/block";
-import {BlockProposingService} from "../../../src/services/block";
-import {ValidatorStore} from "../../../src/services/validatorStore";
-import {getApiClientStub} from "../../utils/apiStub";
-import {loggerVc} from "../../utils/logger";
-import {ClockMock} from "../../utils/clock";
+import {BlockProposingService} from "../../../src/services/block.js";
+import {ValidatorStore} from "../../../src/services/validatorStore.js";
+import {getApiClientStub} from "../../utils/apiStub.js";
+import {loggerVc} from "../../utils/logger.js";
+import {ClockMock} from "../../utils/clock.js";
 
 type ProposerDutiesRes = {dependentRoot: Root; data: routes.validator.ProposerDuty[]};
 

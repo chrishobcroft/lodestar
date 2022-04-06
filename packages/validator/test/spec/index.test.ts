@@ -3,14 +3,14 @@ import chaiAsPromised from "chai-as-promised";
 import rimraf from "rimraf";
 import {LevelDbController} from "@chainsafe/lodestar-db";
 import {LogLevel, WinstonLogger} from "@chainsafe/lodestar-utils";
-import {config} from "@chainsafe/lodestar-config/default";
+import {config} from "@chainsafe/lodestar-config/default.js";
 import {
   SlashingProtection,
   SlashingProtectionBlock,
   SlashingProtectionAttestation,
   InvalidBlockError,
   InvalidAttestationError,
-} from "../../src/slashingProtection";
+} from "../../src/slashingProtection/index.js";
 
 chai.use(chaiAsPromised);
 

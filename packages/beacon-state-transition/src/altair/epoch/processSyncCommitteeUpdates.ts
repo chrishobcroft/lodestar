@@ -1,8 +1,9 @@
-import {aggregatePublicKeys} from "@chainsafe/bls";
+import bls from "@chainsafe/bls";
 import {EPOCHS_PER_SYNC_COMMITTEE_PERIOD} from "@chainsafe/lodestar-params";
 import {ssz} from "@chainsafe/lodestar-types";
-import {getNextSyncCommitteeIndices} from "../../util/seed";
-import {CachedBeaconStateAltair} from "../../types";
+import {getNextSyncCommitteeIndices} from "../../util/seed.js";
+import {CachedBeaconStateAltair} from "../../types.js";
+const {aggregatePublicKeys} = bls;
 
 /**
  * Rotate nextSyncCommittee to currentSyncCommittee if sync committee period is over.

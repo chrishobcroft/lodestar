@@ -1,8 +1,8 @@
 import fs from "node:fs";
 import {init} from "@chainsafe/bls";
 import {getClient} from "@chainsafe/lodestar-api";
-import {config} from "@chainsafe/lodestar-config/default";
-import {NetworkName} from "@chainsafe/lodestar-config/networks";
+import {config} from "@chainsafe/lodestar-config/default.js";
+import {NetworkName} from "@chainsafe/lodestar-config/networks.js";
 import {phase0, ssz} from "@chainsafe/lodestar-types";
 import {
   allForks,
@@ -11,11 +11,11 @@ import {
   AttesterFlags,
   beforeProcessEpoch,
   parseAttesterFlags,
-} from "../../src";
-import {Validator} from "../../lib/phase0";
-import {csvAppend, readCsv} from "./csv";
-import {getInfuraBeaconUrl} from "./infura";
-import {createCachedBeaconStateTest} from "../utils/state";
+} from "../../src/index.js";
+import {Validator} from "../../lib/phase0.js";
+import {csvAppend, readCsv} from "./csv.js";
+import {getInfuraBeaconUrl} from "./infura.js";
+import {createCachedBeaconStateTest} from "../utils/state.js";
 
 // Understand the real network characteristics regarding epoch transitions to accurately produce performance test data.
 //

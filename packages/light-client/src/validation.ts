@@ -9,10 +9,10 @@ import {
   DOMAIN_SYNC_COMMITTEE,
 } from "@chainsafe/lodestar-params";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {isValidMerkleBranch} from "./utils/verifyMerkleBranch";
-import {assertZeroHashes, getParticipantPubkeys, isEmptyHeader} from "./utils/utils";
-import {SyncCommitteeFast} from "./types";
-import {computeSyncPeriodAtSlot} from "./utils/clock";
+import {isValidMerkleBranch} from "./utils/verifyMerkleBranch.js";
+import {assertZeroHashes, getParticipantPubkeys, isEmptyHeader} from "./utils/utils.js";
+import {SyncCommitteeFast} from "./types.js";
+import {computeSyncPeriodAtSlot} from "./utils/clock.js";
 
 /**
  *

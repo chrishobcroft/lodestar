@@ -1,6 +1,6 @@
 import bls, {CoordType, PublicKey} from "@chainsafe/bls";
 import {ValidatorIndex} from "@chainsafe/lodestar-types";
-import {BeaconStateAllForks} from "./types";
+import {BeaconStateAllForks} from "./types.js";
 
 export type Index2PubkeyCache = PublicKey[];
 

@@ -10,9 +10,9 @@ import {
   MAX_EFFECTIVE_BALANCE,
 } from "@chainsafe/lodestar-params";
 
-import {ZERO_HASH} from "../../constants";
-import {computeDomain, computeSigningRoot, increaseBalance} from "../../util";
-import {CachedBeaconStateAllForks, CachedBeaconStateAltair} from "../../types";
+import {ZERO_HASH} from "../../constants/index.js";
+import {computeDomain, computeSigningRoot, increaseBalance} from "../../util/index.js";
+import {CachedBeaconStateAllForks, CachedBeaconStateAltair} from "../../types.js";
 
 /**
  * Process a Deposit operation. Potentially adds a new validator to the registry. Mutates the validators and balances

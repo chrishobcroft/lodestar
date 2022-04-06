@@ -1,6 +1,6 @@
-import {createIChainForkConfig} from "./beaconConfig";
-import {chainConfig as mainnetChainConfig} from "./chainConfig/presets/mainnet";
-import {chainConfig as minimalChainConfig} from "./chainConfig/presets/minimal";
+import {createIChainForkConfig} from "./beaconConfig.js";
+import {chainConfig as mainnetChainConfig} from "./chainConfig/presets/mainnet.js";
+import {chainConfig as minimalChainConfig} from "./chainConfig/presets/minimal.js";
 
 export {mainnetChainConfig, minimalChainConfig};
 // for testing purpose only

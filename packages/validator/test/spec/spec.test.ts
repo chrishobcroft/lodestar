@@ -6,7 +6,7 @@ import rimraf from "rimraf";
 import {fromHexString} from "@chainsafe/ssz";
 import {LevelDbController} from "@chainsafe/lodestar-db";
 import {LogLevel, WinstonLogger} from "@chainsafe/lodestar-utils";
-import {config} from "@chainsafe/lodestar-config/default";
+import {config} from "@chainsafe/lodestar-config/default.js";
 import {ZERO_HASH} from "@chainsafe/lodestar-beacon-state-transition";
 import {
   SlashingProtection,
@@ -15,8 +15,8 @@ import {
   InvalidBlockError,
   SlashingProtectionBlock,
   SlashingProtectionAttestation,
-} from "../../src/slashingProtection";
-import {SPEC_TEST_LOCATION} from "./params";
+} from "../../src/slashingProtection/index.js";
+import {SPEC_TEST_LOCATION} from "./params.js";
 
 chai.use(chaiAsPromised);
 
